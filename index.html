@@ -141,8 +141,18 @@
   <!-- 复制反馈提示 -->
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <!-- 数据配置与渲染脚本 -->
-  <script src="./data.js"></script>
-  <script src="./app.js"></script>
+  <!-- 数据配置与渲染脚本（为 data.js 附加时间戳，避免修改后受浏览器 10 分钟缓存影响） -->
+  <script>
+    (function () {
+      var dataScript = document.createElement("script");
+      dataScript.src = "./data.js?v=" + Date.now();
+      dataScript.onload = function () {
+        var appScript = document.createElement("script");
+        appScript.src = "./app.js";
+        document.body.appendChild(appScript);
+      };
+      document.body.appendChild(dataScript);
+    })();
+  </script>
 </body>
 </html>

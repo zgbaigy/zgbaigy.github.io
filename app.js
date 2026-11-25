@@ -109,7 +109,7 @@
             <h1 class="hero-name">${esc(p.name)}</h1>
             ${p.englishName ? `<span class="hero-en-name">${esc(p.englishName)}</span>` : ""}
           </div>
-          <p class="hero-title">${esc(p.title)}</p>
+          ${p.title ? `<p class="hero-title">${esc(p.title)}</p>` : ""}
           <div class="hero-location">${ICONS.location}<span>${esc(p.location)}</span></div>
           <p class="hero-summary">${esc(p.summary)}</p>
           <div class="hero-bio">
