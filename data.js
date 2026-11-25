@@ -85,6 +85,30 @@ window.RESUME_DATA = {
       ],
       tags: ["Qt", "C++", "OpenCV", "亚像素检测", "手眼标定", "轨迹规划", "六轴机械臂", "状态机"],
       links: []
+    },
+    {
+      name: "张大厨的餐厅 · 家庭点餐 Web 应用",
+      role: "独立全栈开发",
+      period: "2026.11",
+      category: "全栈 Web 应用",
+      summary:
+        "基于腾讯云开发（CloudBase）与 PostgreSQL 独立设计并上线的私房点餐单页应用，打通“选菜点单 → 购物车与自定义加菜 → 后厨接单制作 → 历史菜品归档”完整前后端业务闭环。",
+      highlights: [
+        "全栈业务闭环：接入 CloudBase 匿名认证、关系型数据库与云存储图片上传，实现分类点餐、自定义想吃的菜、本地购物车持久化、下单前菜品状态后端校验、待制作订单取消及按日期分组的已完成菜品记录。",
+        "后厨管理后台：实现口令鉴权的张大厨管理入口，支持待做订单提醒角标、菜品粒度状态流转（待制作 → 制作中 → 已完成）、菜品上下架/换图/重名校验及限定范围的数据清理模块。",
+        "多端体验优化：支持 Hash 路由与手机返回键导航、云存储图片上传与压缩降级兜底，以及桌面端双列网格与移动端单列自适应布局。"
+      ],
+      tags: ["HTML5/CSS3", "JavaScript", "CloudBase", "PostgreSQL", "云存储", "响应式设计"],
+      links: [
+        {
+          label: "在线体验",
+          url: "https://able-gamefowl-d9gxn8faf0d85a43e-1535873733.tcloudbaseapp.com/"
+        },
+        {
+          label: "GitHub 源码",
+          url: "https://github.com/zgbaigy/restaurant"
+        }
+      ]
     }
   ],
 
