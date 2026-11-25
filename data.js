@@ -16,7 +16,7 @@ window.RESUME_DATA = {
     name: "张庚保",
     englishName: "南京邮电大学 · 信息工程（学士）",
     initials: "张",
-    avatarUrl: "", // 如需展示证件照，放入 resume/avatar.jpg 并填写 "./avatar.jpg"
+    avatarUrl: "./avatar.jpg", // 如需更换证件照，替换本目录的 avatar.jpg 即可
     title: "",
     location: "江苏省 · 连云港市",
     status: "2025 届本科毕业生 · 积极求职中",
